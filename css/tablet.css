@@ -1,0 +1,13 @@
+.cards-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 930px;
+  margin: 0 auto;
+}
+.info-container--card {
+  max-width: 450px;
+  height: 134px;
+}
+footer {
+  gap: 50%;
+}

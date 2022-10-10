@@ -137,7 +137,19 @@ main {
   margin: 24px auto 48px;
 }
 /* ---------------------------------- TABLAS-------------------------------------------------------*/
+.main-tables-container {
+  width: 70%;
+  min-width: 235px;
+  max-width: 550px;
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main-table {
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
@@ -213,7 +225,7 @@ main {
   background-color: var(--soft-orange);
   padding: 8px;
   border-radius: 8px;
-  margin: 10px 0 65px;
+  margin: 10px 0 15px;
   font-size: 1.2rem;
   color: var(--warm-black1);
 }
@@ -232,6 +244,7 @@ main {
 }
 /* ----------------------------INFORMACION ------------------------------------------------*/
 .main-info-container {
+  margin-top: 50px;
   width: 100%;
   height: auto;
   background: var(--warm-black);
@@ -269,11 +282,17 @@ main {
   color: #808080;
   margin-bottom: 32px;
 }
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .info-container--card {
   background: var(--warm-black1);
   align-self: stretch;
   border-radius: 4px;
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto 16px;
   box-shadow: 0px 4px 8px 0px #00000029;
 }
@@ -444,7 +463,7 @@ main {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   min-width: 320px;
   height: 150px;
@@ -466,4 +485,12 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (min-width: 728px) {
+  .main-tables-container {
+    overflow-x: hidden;
+  }
+  .plans-container--slider {
+    overflow-x: hidden;
+  }
 }
