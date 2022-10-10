@@ -239,9 +239,7 @@ main {
 .commission-table__updated {
   background-color: var(--soft-blue);
 }
-.main-commission-table {
-  /* display: none; */
-}
+
 /* ----------------------------INFORMACION ------------------------------------------------*/
 .main-info-container {
   margin-top: 50px;
